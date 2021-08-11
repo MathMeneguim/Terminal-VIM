@@ -1,0 +1,95 @@
+PARAMETRO:
+-a > all
+-r > recursive (tudo dentro diretorio)
+-f > force 
+-n > number ( + numero)
+-u > user
+-h > human
+-o > info
+-l > list (long)
+-x > all
+| > add
+& > roda aplicacao em segundo plano (final do nome app)
+
+USUARIOS:
+su > trocar usuario
+sudo > root
+passwd > change password
+adduser > novo usuario (+username)
+groupadd > criar grupo (+groupname)
+usermod > coloca condicoes/ muda configuracoes dos usuarios
+
+
+INSTALACAO:
+apt > 
+snap >
+deb >
+youtube-dl > install youtube videos on pc
+
+ATALHOS:
+Tab > completar nome
+Ctrl + C > sair/interromper processo
+Ctrl + D > desconecta terminal/exit
+Ctrl + L > clear
+Ctrl + A > inicio da linha
+Ctrl + E > final da linha
+*Ctrl + U > apaga comando (???)
+Ctrl + P > posicao ultimo comando
+Ctrl + N > posicao prox. comando
+screen -S [nome] > cria terminal virtual | abandonar [CRTL + A] + [D] | voltar > screen -r [nome]
+
+ARQUIVOS:
+mv > renomear
+ls > conteudo diretorio
+pwd > print work directory
+touch > cria um arquivo
+echo > escreve no standard output (terminal ou arquivo ex: echo "hello world > a.txt" p/ n sobrescrever: echo "hello world" >> a.txt |mais facil da alterar algo pequeno num arquivo .txt| )
+grep > procura palavra chave
+cat > visualizar arquivo
+head > comeco arquivo (ex: head -n 15)
+tail > final arquivo (ex: tail -n 5)
+less > visualizar arquivo (melhor que cat para arquivos grandes| teclas de atalho VI)
+eog > [eye of gnome] view images by terminal 
+ranger >
+
+(d> diretorio l> link c> caracter b>byte r> read w>write x>execute )
+
+REDES/SERVIDORES:
+ifconfig > mostra interface de rede + loopback
+ifconfig (nome interface) down/up > derruba/mostra interface
+route > comportar como roteador | route > add -net (IP) (interface) > conduz rota computadores |  add default gw (porta***) > cria gateway
+ssh > entrar no servidor remoto (outro computador) |ssh username@ip| (usuarios no /etc/hosts/ |alterar ip p/ algum nome ('ip' nome)|) (alterar informacoes do ssh /etc/ssh/sshd_config)
+scp > transfere arquivo de um servidor p/ outro |scp nome_arquivo.txt username@ip:caminho_diretorio(sem nada: home) | 
+service network-manager restart > restart internet manager 
+airmon-ng start (interface) > inicia nova interface modo monitor
+airodump > list internet in area | -c (channel) --bssid (bssid) -w
+
+
+PROCESSOS:
+top > monitorar processos (q to quit)
+bashtop >
+htop >
+ps > -informacoes top (util com grep: ps aux | grep -i vim)
+pstree > ps in tree mode
+kill > mata processos (kill + PID(process identificator)) | -9 > morre MESMO + PID | -SIGSTOP > stop process | -SIGCONT > continue process stoped
+renice > altera prioridade (-20 > 19 ex: sudo renice -10 -p 1516)
+which > procura processos instalados
+dmesg > informcoes kernel sendo executado
+sudo apt-cache stats > informacoes de pacotes
+
+
+HARDWARE:
+sensors > temperatura cpu, gpu ...
+lsdev > hardware instalado
+lsusb > hardware usb
+lspci > barramento do pci
+lpq > habilita impressora
+lprm > remove impressora
+inxi > view hardware info
+neofetch > view hardware info ()
+ncdu > view usage disk by repository
+
+INPUT:
+xinput > devices
+float > float a device
+reattach > return device
